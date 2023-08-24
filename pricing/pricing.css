@@ -24,12 +24,13 @@ body {
 
 .card-body > ul > li{
   font-weight: 400;
+  font-size: 14px;
 }
 
 .HD{
   font-weight: 100;
   color: var(--bs-secondary-color) !important;
-  font-size: small;
+  font-size:0.8vw;
 }
 #terms{
   color: #0071eb;
