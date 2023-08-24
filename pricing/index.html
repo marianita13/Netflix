@@ -14,6 +14,7 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="pricing.css" rel="stylesheet">
   <script src="../assets/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -106,16 +107,12 @@
         </nav>
       </div>
 
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-6 fw-normal text-body-emphasis">Choose the plan that’s right for you</h1>
-        <p class="fs-5 text-body-secondary ms-3" id="texto1"><svg class="bi text-danger me-2" width="24" height="24"><use xlink:href="#check"/></svg>Watch all you want. Ad-free.</p>
-        <p class="fs-5 text-body-secondary ms-3" id="texto1"><svg class="bi text-danger me-2" width="24" height="24"><use xlink:href="#check"/></svg>Recommendations just for you.</p>
-        <p class="fs-5 text-body-secondary ms-3" id="texto1"><svg class="bi text-danger me-2" width="24" height="24"><use xlink:href="#check"/></svg>Change or cancel your plan anytime.</p>
+      <div id="myJsonSection" class="pricing-header p-3 pb-md-4 mx-auto text-center">
       </div>
     </header>
 
     <main>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div id="cards" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">

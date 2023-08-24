@@ -1,0 +1,40 @@
+{
+    "section":{
+        "titulo": "Choose the plan that’s right for you",
+        "parrafo" : [
+            {
+                "imagen":"<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check'/></svg>",
+                "texto":"Watch all you want. Ad-free."
+            },
+            {
+                "imagen":"<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check'/></svg>",
+                "texto":"Recommendations just for you."
+            },
+            {
+                "imagen":"<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check'/></svg>",
+                "texto":"Change or cancel your plan anytime."
+            }
+        ]
+    },
+
+    "cards":[
+        {
+            "titulo":"Basic",
+            "precio":"cop 16.900",
+            "descripcion":"Watch on 1 supported device at a time<br> Watch in HD<br> Download on 1 supported device at a time",
+            "boton":"Next"
+        },
+        {
+            "titulo":"Standard",
+            "precio":"cop 26.900",
+            "descripcion":"Watch on 2 supported device at a time<br> Watch in Full HD<br> Download on 2 supported device at a time",
+            "boton":"Next"
+        },
+        {
+            "titulo":"Premium",
+            "precio":"cop 38.900",
+            "descripcion":"Watch on 4 supported device at a time<br> Watch in Ultra HD<br> Download on 6 device at a time<br> Netflix spatial audio",
+            "boton":"Next"
+        }
+    ]
+}
