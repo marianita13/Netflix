@@ -30,7 +30,7 @@ body {
 .HD{
   font-weight: 100;
   color: var(--bs-secondary-color) !important;
-  font-size:0.8vw;
+  font-size:1.2vw;
 }
 #terms{
   color: #0071eb;

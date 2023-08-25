@@ -40,8 +40,34 @@
             "boton":"Next"
         }
     ],
+
     "table":{
         "titulo":"Compare plans",
-        "head":"xd"
+        "head":[
+            {"text":"Free"},
+            {"text":"Pro"},
+            {"text":"Enterprise"}
+        ],
+        "body":[
+            {
+                "title":"Video Quality",
+                "caracteristica1":"Good",
+                "caracteristica2":"Better",
+                "caracteristica3":"Best"
+            },
+            {
+                "title":"Resolution",
+                "caracteristica1":"720p",
+                "caracteristica2":"1080p",
+                "caracteristica3":"4K+HDR"
+            }
+        ],
+        "title":"Watch on your TV, computer, mobile phone and tablet",
+        "check":[
+            {"chulo":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"},
+            {"chulo":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"},
+            {"chulo":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"}
+        ]
     }
+
 }  

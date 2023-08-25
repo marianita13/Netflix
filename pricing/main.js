@@ -82,18 +82,43 @@ seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
 }
 construirCards()
 
-let tabla = async() =>{
+let crearTabla = async() =>{
   let peticion = await fetch(`${path}.json`);
   let respuesta = await peticion.json();
+  console.log("Hola");
   let seleccion = document.querySelector("#tabla");
   seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
     <h2 class="display-6 text-center mb-4">${respuesta.table.titulo}</h2>
-    <div id="tabla" class="table-responsive">
-        <table class="table text-center">
+      <table class="table text-center">
         <thead>
-        <tr>
-               
-        </tr>
+          <tr>
+            <th style="width: 34%;"></th>
+            ${respuesta.table.head.map((value) => /*HTML*/`
+              <th style="width: 22%;">${value.text}</th>
+            `).join("")}
+          </tr>
         </thead>
+        <tbody>
+          ${respuesta.table.body.map((valor) => /*HTML*/`
+          <tr>
+            <th scope="row" class="text-start">${valor.title}</th>
+            <td>${valor.caracteristica1}</td>
+            <td>${valor.caracteristica2}</td>
+            <td>${valor.caracteristica3}</td>
+          </tr>
+          `)}
+        </tbody>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">${respuesta.table.title}</th>
+            ${respuesta.table.check.map((valorC) => /*HTML*/ `
+              <td>${valorC.chulo}</td>
+            `).join(" ")}
+          </tr>
+        </tbody>
+      </table>
   `)
 }
+
+crearTabla()
+
