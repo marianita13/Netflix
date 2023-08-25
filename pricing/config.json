@@ -39,5 +39,8 @@
             "descripcion":"Watch on 4 supported device at a time<br> Watch in Ultra HD<br> Download on 6 device at a time<br> Netflix spatial audio",
             "boton":"Next"
         }
-    ]
+    ],
+    "table":{
+        "titulo":"Compare plans"
+    }
 }

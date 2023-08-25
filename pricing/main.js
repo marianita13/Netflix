@@ -66,8 +66,8 @@ seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
         ${respuesta.cards.map((value) => /*HTML*/`
          <div class="col"> 
            <div class="card mb-4 rounded-3 shadow-sm"> 
-             <div class="card-header py-3"> 
-               <h4 class="my-0 fw-normal">${value.titulo}</h4> 
+             <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">${value.titulo}</h4> 
              </div>
              <div class="card-body">
               <h1 class="card-title pricing-card-title">${value.cop}<small class="text-body-secondary fw-light">${value.precio}</small></h1>
@@ -81,3 +81,10 @@ seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
 `)
 }
 construirCards()
+
+let tabla = async() =>{
+  let peticion = await fetch(`${path}.json`);
+  let respuesta = await peticion.json();
+  let seleccion = document.querySelector("#tabla");
+  //seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
+}
