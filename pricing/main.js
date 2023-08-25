@@ -86,5 +86,14 @@ let tabla = async() =>{
   let peticion = await fetch(`${path}.json`);
   let respuesta = await peticion.json();
   let seleccion = document.querySelector("#tabla");
-  //seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
+  seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
+    <h2 class="display-6 text-center mb-4">${respuesta.table.titulo}</h2>
+    <div id="tabla" class="table-responsive">
+        <table class="table text-center">
+        <thead>
+        <tr>
+               
+        </tr>
+        </thead>
+  `)
 }

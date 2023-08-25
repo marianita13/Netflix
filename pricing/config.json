@@ -41,6 +41,7 @@
         }
     ],
     "table":{
-        "titulo":"Compare plans"
+        "titulo":"Compare plans",
+        "head":"xd"
     }
-}
+}  
