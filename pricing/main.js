@@ -118,6 +118,10 @@ let crearTabla = async() =>{
         </tbody>
       </table>
   `)
+  let terms = document.querySelector("#terms");
+  terms.insertAdjacentHTML("beforeend", /*HTML*/`
+    ${respuesta.terms}
+  `)
 }
 
 crearTabla()
