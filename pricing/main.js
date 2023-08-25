@@ -62,13 +62,22 @@ let construirCards = async() =>{
     let peticion = await fetch(`${path}.json`);
     let respuesta = await peticion.json();
     let seleccion = document.querySelector("#cards");
-seleccion.insertAdjacentHTML("beforeend", `
-     <div id="cards" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-${respuesta.cards.map((value) => `
+seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
+        ${respuesta.cards.map((value) => /*HTML*/`
          <div class="col"> 
            <div class="card mb-4 rounded-3 shadow-sm"> 
              <div class="card-header py-3"> 
                <h4 class="my-0 fw-normal">${value.titulo}</h4> 
-             </div>`).join(" ")}
+             </div>
+             <div class="card-body">
+              <h1 class="card-title pricing-card-title">${value.cop}<small class="text-body-secondary fw-light">${value.precio}</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>${value.descripcion}<li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">${value.boton}</button>
+            </div>
+          </div>
+        </div>`).join(" ")}
 `)
 }
+construirCards()
