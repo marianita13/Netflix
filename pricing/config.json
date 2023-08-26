@@ -69,6 +69,27 @@
             {"chulo":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"}
         ]
     },
-    "terms":"HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <span id='terms'>Terms of Use </span>for more details.<br> Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic."
+    "terms":"HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <span id='terms'>Terms of Use </span>for more details.<br> Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
 
+    "footer": {
+        "img":"<img class='mb-2' src='../assets/brand/4375011_logo_netflix_icon.svg' alt=' width='44' height='39'>",
+        "campus":"Campuslands 2023 Bucaramanga",
+        "features":{
+            "title":"Features",
+            "item1":"FAQ",
+            "item2":"Privacy"
+        },
+        "resources":{
+            "title":"Resources",
+            "item1":"Help Center",
+            "item2":"Cookie Preferences",
+            "item3":"Netflix Shop",
+            "item4":"Corporate Information"
+        },
+        "about":{
+            "title":"About",
+            "item1":"Terms of use"
+        }
+        
+    }
 }  

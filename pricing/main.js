@@ -85,7 +85,6 @@ construirCards()
 let crearTabla = async() =>{
   let peticion = await fetch(`${path}.json`);
   let respuesta = await peticion.json();
-  console.log("Hola");
   let seleccion = document.querySelector("#tabla");
   seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
     <h2 class="display-6 text-center mb-4">${respuesta.table.titulo}</h2>
@@ -106,7 +105,7 @@ let crearTabla = async() =>{
             <td>${valor.caracteristica2}</td>
             <td>${valor.caracteristica3}</td>
           </tr>
-          `)}
+          `).join("")}
         </tbody>
         <tbody>
           <tr>
@@ -126,3 +125,40 @@ let crearTabla = async() =>{
 
 crearTabla()
 
+let crearFooter = async() =>{
+  let peticion = await fetch(`${path}.json`);
+  let respuesta = await peticion.json();
+  let seleccion = document.querySelector("#footer");
+  seleccion.insertAdjacentHTML("beforeend", /*HTML*/`
+    <div class="row">
+      <div class="col-12 col-md">
+        ${respuesta.footer.img}
+        <small class="d-block mb-3 text-body-secondary">&copy; ${respuesta.footer.campus}</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>${respuesta.footer.features.title}</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.features.item1}</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.features.item2}</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>${respuesta.footer.resources.title}</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.resources.item1}</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.resources.item2}</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.resources.item3}</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.resources.item4}</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>${respuesta.footer.about.title}</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${respuesta.footer.about.item1}</a></li>
+        </ul>
+      </div>
+    </div>
+  `)
+}
+
+crearFooter()
